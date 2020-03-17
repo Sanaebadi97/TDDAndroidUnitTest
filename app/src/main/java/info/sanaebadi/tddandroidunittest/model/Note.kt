@@ -5,23 +5,29 @@ import android.os.Parcelable
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
+import java.lang.reflect.Constructor
 
 
 @Entity(tableName = "notes")
 data class Note(
+
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    @Ignore
+    var id: Int? = null,
 
     @NonNull
     @ColumnInfo(name = "title")
-    val title: String,
+    val title: String? = null,
 
     @ColumnInfo(name = "content")
-    val content: String,
+    val content: String? = null,
 
     @ColumnInfo(name = "timestamp")
-    val timestamp: String
+    val timestamp: String? = null
+
+
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
@@ -63,6 +69,8 @@ data class Note(
 
         return note.id == id && note.title == title && note.content == content
     }
+
+
 }
 
 
