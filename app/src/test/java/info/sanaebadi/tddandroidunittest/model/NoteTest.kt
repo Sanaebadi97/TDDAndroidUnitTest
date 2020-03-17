@@ -1,6 +1,7 @@
 package info.sanaebadi.tddandroidunittest.model
 
 import org.junit.jupiter.api.Test
+import java.lang.Exception
 
 class NoteTest {
 
@@ -9,7 +10,7 @@ class NoteTest {
     Compare two equal   Notes
      */
     @Test
-    internal fun name() {
+    internal fun isNotesEqual_identicalProperties() {
         TODO("Not yet implemented")
     }
 
@@ -32,12 +33,10 @@ class NoteTest {
      */
 
 
-
     /*
 
     Compare two notes with different content
      */
-
 
 
 }
