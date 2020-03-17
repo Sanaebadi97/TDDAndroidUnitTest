@@ -17,8 +17,6 @@ R
 "app/src/main/res/values/styles.xml,f/7/f79cc2688e29fcbc286fda14ae07b27c9e83690f
 P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
-v
-Fapp/src/test/java/info/sanaebadi/tddandroidunittest/ExampleUnitTest.kt,3/2/32e53fb4b147b09c44a95787764453ae44471cf5
 >
 app/.gitignore,5/1/51e1c5d383dfaa35e0e7e5873a0a99355a86880f
 F
@@ -46,3 +44,7 @@ A
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 s
 Capp/src/main/java/info/sanaebadi/tddandroidunittest/MainActivity.kt,b/a/baeb7462a8082c4c58a996c5cc21eca0ad713888
+q
+Aapp/src/main/java/info/sanaebadi/tddandroidunittest/model/Note.kt,2/6/2671cfbc68d72f62b05a64763ed05c6324f52614
+u
+Eapp/src/test/java/info/sanaebadi/tddandroidunittest/model/NoteTest.kt,1/3/1325314d56f3219a7acc9aaa080434430554ff7e
