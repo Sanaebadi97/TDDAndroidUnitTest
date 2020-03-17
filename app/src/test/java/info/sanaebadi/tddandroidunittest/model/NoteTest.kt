@@ -1,6 +1,7 @@
 package info.sanaebadi.tddandroidunittest.model
 
 import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import java.lang.Exception
 
@@ -23,19 +24,17 @@ class NoteTest {
         //Arrange
 
         val note1: Note =
-            Note(title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
-        note1.id = 1
+            Note(id = 1, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
 
         val note2: Note =
-            Note(title = "Note #2", content = "This is note #2", timestamp = TIMESTAMP_2)
-        note2.id = 2
+            Note(id = 1, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
 
 
         //Act
 
 
         //Assert
-        Assertions.assertEquals(note1, note2)
+        assertEquals(note1, note2)
         println("The notes are equals!")
     }
 
