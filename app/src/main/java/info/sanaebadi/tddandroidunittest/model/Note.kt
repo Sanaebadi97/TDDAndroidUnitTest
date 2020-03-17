@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "notes")
-data class Note (
+data class Note(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
 
@@ -22,7 +22,7 @@ data class Note (
 
     @ColumnInfo(name = "timestamp")
     val timestamp: String
-) :Parcelable {
+) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString()!!,
@@ -47,6 +47,21 @@ data class Note (
         override fun newArray(size: Int): Array<Note?> {
             return arrayOfNulls(size)
         }
+    }
+
+
+    override fun equals(other: Any?): Boolean {
+        if (other == null) {
+            return false
+        }
+
+        if (javaClass != other.javaClass) {
+            return false
+        }
+
+        var note: Note = other as Note
+
+        return note.id == id && note.title == title && note.content == content
     }
 }
 
