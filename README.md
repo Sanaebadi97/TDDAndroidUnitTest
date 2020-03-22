@@ -1,4 +1,3 @@
-# TDD Android UnitTest 
 
 ## Develop a real app using TDD (Test-driven development) :heart_eyes:
 
