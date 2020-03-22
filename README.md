@@ -22,7 +22,7 @@ Every line of code is written and explained on video :yum:
 
 - Testing with MVVM architecture (Repository pattern) :muscle:
 
-- Testing Room Database
+- Testing Room Database :dizzy:
 
 - Testing Room DAO
 
