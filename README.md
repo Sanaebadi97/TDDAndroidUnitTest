@@ -21,7 +21,7 @@ Every line of code is written and explained on video :yum:
 
 - TDD (Test driven development)
 
-- Testing with MVVM architecture (Repository pattern)
+- Testing with MVVM architecture (Repository pattern) :muscle:
 
 - Testing Room Database
 
