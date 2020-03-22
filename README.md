@@ -27,7 +27,7 @@ Every line of code is written and explained on video :yum:
 
 - Testing Room DAO
 
-- Testing RxJava
+- Testing RxJava :v:
 
 
 
