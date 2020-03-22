@@ -19,7 +19,7 @@ Every line of code is written and explained on video :yum:
 
 - Test Coverage
 
-- TDD (Test driven development)
+- TDD (Test driven development) :kissing_cat:
 
 - Testing with MVVM architecture (Repository pattern) :muscle:
 
