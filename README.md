@@ -17,7 +17,7 @@ Every line of code is written and explained on video :yum:
 
 - Mockito :facepunch:
 
-- Test Coverage
+- Test Coverage :clap:
 
 - TDD (Test driven development) :kissing_cat:
 
