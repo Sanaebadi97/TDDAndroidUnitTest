@@ -24,7 +24,7 @@ Every line of code is written and explained on video :yum:
 
 - Testing Room Database :dizzy:
 
-- Testing Room DAO
+- Testing Room DAO :open_mouth:
 
 - Testing RxJava :v:
 
