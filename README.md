@@ -13,9 +13,9 @@ Every line of code is written and explained on video :yum:
 
 - JUnit5 (local unit tests) :+1:
 
-- JUnit4 (Instrumentation Tests)
+- JUnit4 (Instrumentation Tests) 
 
-- Mockito
+- Mockito :facepunch:
 
 - Test Coverage
 
