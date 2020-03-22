@@ -1,6 +1,6 @@
-# TDD Android UnitTest
+# TDD Android UnitTest 
 
-## Develop a real app using TDD (Test-driven development).
+## Develop a real app using TDD (Test-driven development) :heart_eyes:
 
 **You'll learn to build professional grade unit tests using popular libraries like JUnit5 (Jupiter) and Mockito.**
 
