@@ -133,6 +133,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/viewModel/ViewModelKey.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/viewModel/ViewModelProviderFactory.kt">
           <value>
             <set />
