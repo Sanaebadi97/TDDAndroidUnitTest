@@ -10,6 +10,8 @@ import info.sanaebadi.tddandroidunittest.util.BaseApplication
 
 @Component(modules = {
     AndroidInjectionModule::class,
+    ViewModelFactoryModule::class,
+
 
 })
 
