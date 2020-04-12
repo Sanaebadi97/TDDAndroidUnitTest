@@ -2,75 +2,103 @@ package info.sanaebadi.tddandroidunittest.model
 
 import android.os.Parcel
 import android.os.Parcelable
-import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
-import java.lang.reflect.Constructor
-
 
 @Entity(tableName = "notes")
-data class Note(
-
+class Note : Parcelable {
     @PrimaryKey(autoGenerate = true)
-    @Ignore
-    var id: Int? = null,
+    var id = 0
 
-    @NonNull
     @ColumnInfo(name = "title")
-    val title: String? = null,
+    var title: String? = null
 
     @ColumnInfo(name = "content")
-    val content: String? = null,
+    var content: String? = null
 
     @ColumnInfo(name = "timestamp")
-    val timestamp: String? = null
+    var timestamp: String? = null
 
-
-) : Parcelable {
-    constructor(parcel: Parcel) : this(
-        parcel.readInt(),
-        parcel.readString()!!,
-        parcel.readString()!!,
-        parcel.readString()!!
-    ) {
+    constructor(title: String, content: String?, timestamp: String?) {
+        this.title = title
+        this.content = content
+        this.timestamp = timestamp
     }
 
-    override fun writeToParcel(dest: Parcel?, flags: Int) {
-        TODO("Not yet implemented")
+    @Ignore
+    constructor(id: Int, title: String, content: String?, timestamp: String?) {
+        this.id = id
+        this.title = title
+        this.content = content
+        this.timestamp = timestamp
+    }
+
+    @Ignore
+    constructor() {
+    }
+
+    @Ignore
+    constructor(note: Note) {
+        id = note.id
+        title = note.title
+        content = note.content
+        timestamp = note.timestamp
+    }
+
+    protected constructor(`in`: Parcel) {
+        id = `in`.readInt()
+        title = `in`.readString()!!
+        content = `in`.readString()
+        timestamp = `in`.readString()
+    }
+
+    override fun toString(): String {
+        return "Note{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", timestamp='" + timestamp + '\'' +
+                '}'
     }
 
     override fun describeContents(): Int {
-        TODO("Not yet implemented")
+        return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<Note> {
-        override fun createFromParcel(parcel: Parcel): Note {
-            return Note(parcel)
-        }
-
-        override fun newArray(size: Int): Array<Note?> {
-            return arrayOfNulls(size)
-        }
+    override fun writeToParcel(dest: Parcel, flags: Int) {
+        dest.writeInt(id)
+        dest.writeString(title)
+        dest.writeString(content)
+        dest.writeString(timestamp)
     }
 
-
-    override fun equals(other: Any?): Boolean {
-        if (other == null) {
+    override fun equals(obj: Any?): Boolean {
+        if (obj == null) {
             return false
         }
-
-        if (javaClass != other.javaClass) {
+        if (javaClass != obj.javaClass) {
             return false
         }
-
-        var note: Note = other as Note
-
+        val note =
+            obj as Note
         return note.id == id && note.title == title && note.content == content
     }
 
 
+    companion object {
+        val CREATOR: Parcelable.Creator<Note?> =
+            object : Parcelable.Creator<Note?> {
+                override fun createFromParcel(`in`: Parcel): Note? {
+                    return Note(`in`)
+                }
+
+                override fun newArray(size: Int): Array<Note?> {
+                    return arrayOfNulls(size)
+                }
+            }
+    }
 }
 
 
