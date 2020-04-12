@@ -1,9 +1,8 @@
-package info.sanaebadi.tddandroidunittest.model
+package info.sanaebadi.tddandroidunittest.model.model
 
-import org.junit.jupiter.api.Assertions
+import info.sanaebadi.tddandroidunittest.model.Note
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
-import java.lang.Exception
 
 class NoteTest {
 
@@ -24,10 +23,20 @@ class NoteTest {
         //Arrange
 
         val note1: Note =
-            Note(id = 1, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
+            Note(
+                id = 1,
+                title = "Note #1",
+                content = "This is note #1",
+                timestamp = TIMESTAMP_1
+            )
 
         val note2: Note =
-            Note(id = 1, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
+            Note(
+                id = 1,
+                title = "Note #1",
+                content = "This is note #1",
+                timestamp = TIMESTAMP_1
+            )
 
 
         //Act
@@ -49,10 +58,20 @@ class NoteTest {
         //Arrange
 
         val note1: Note =
-            Note(id = 1, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
+            Note(
+                id = 1,
+                title = "Note #1",
+                content = "This is note #1",
+                timestamp = TIMESTAMP_1
+            )
 
         val note2: Note =
-            Note(id = 2, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
+            Note(
+                id = 2,
+                title = "Note #1",
+                content = "This is note #1",
+                timestamp = TIMESTAMP_1
+            )
 
 
         //Act
@@ -75,10 +94,20 @@ class NoteTest {
         //Arrange
 
         val note1: Note =
-            Note(id = 1, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
+            Note(
+                id = 1,
+                title = "Note #1",
+                content = "This is note #1",
+                timestamp = TIMESTAMP_1
+            )
 
         val note2: Note =
-            Note(id = 1, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_2)
+            Note(
+                id = 1,
+                title = "Note #1",
+                content = "This is note #1",
+                timestamp = TIMESTAMP_2
+            )
 
 
         //Act
@@ -101,10 +130,20 @@ class NoteTest {
         //Arrange
 
         val note1: Note =
-            Note(id = 1, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
+            Note(
+                id = 1,
+                title = "Note #1",
+                content = "This is note #1",
+                timestamp = TIMESTAMP_1
+            )
 
         val note2: Note =
-            Note(id = 1, title = "Note #2", content = "This is note #1", timestamp = TIMESTAMP_2)
+            Note(
+                id = 1,
+                title = "Note #2",
+                content = "This is note #1",
+                timestamp = TIMESTAMP_2
+            )
 
 
         //Act
@@ -125,10 +164,20 @@ class NoteTest {
         //Arrange
 
         val note1: Note =
-            Note(id = 1, title = "Note #1", content = "This is note #1", timestamp = TIMESTAMP_1)
+            Note(
+                id = 1,
+                title = "Note #1",
+                content = "This is note #1",
+                timestamp = TIMESTAMP_1
+            )
 
         val note2: Note =
-            Note(id = 1, title = "Note #1", content = "This is note #2", timestamp = TIMESTAMP_2)
+            Note(
+                id = 1,
+                title = "Note #1",
+                content = "This is note #2",
+                timestamp = TIMESTAMP_2
+            )
 
 
         //Act
