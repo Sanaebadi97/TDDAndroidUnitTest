@@ -5,15 +5,16 @@ import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
-import info.sanaebadi.tddandroidunittest.util.BaseApplication
+import info.sanaebadi.tddandroidunittest.BaseApplication
 
 
-@Component(modules = {
-    AndroidInjectionModule::class,
-    ViewModelFactoryModule::class,
-
-
-})
+@Component(
+    modules = [
+        AndroidInjectionModule::class,
+        ViewModelFactoryModule::class,
+        ActivityBuilderModule::class,
+        AppModule::class]
+)
 
 interface AppComponent : AndroidInjector<BaseApplication> {
 

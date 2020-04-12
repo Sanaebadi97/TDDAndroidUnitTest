@@ -1,4 +1,4 @@
-package info.sanaebadi.tddandroidunittest.util
+package info.sanaebadi.tddandroidunittest
 
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
