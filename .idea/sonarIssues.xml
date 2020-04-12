@@ -13,6 +13,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/presentation/src/main/java/com/farazpardazan/poshtibanyar/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/presentation/src/main/java/com/farazpardazan/poshtibanyar/model/PeriodicItemModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/presentation/src/main/java/com/farazpardazan/poshtibanyar/smsRetriver/OTPSmsBroadCastReceiver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../AndroidTestingwithJUnitandEspresso/app/build.gradle">
           <value>
             <set />
