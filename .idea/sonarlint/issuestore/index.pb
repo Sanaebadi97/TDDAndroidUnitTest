@@ -34,8 +34,6 @@ A
 app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
 <
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
-s
-Capp/src/main/java/info/sanaebadi/tddandroidunittest/MainActivity.kt,b/a/baeb7462a8082c4c58a996c5cc21eca0ad713888
 q
 Aapp/src/main/java/info/sanaebadi/tddandroidunittest/model/Note.kt,2/6/2671cfbc68d72f62b05a64763ed05c6324f52614
 t
@@ -58,3 +56,27 @@ R
 Kapp/src/test/java/info/sanaebadi/tddandroidunittest/model/model/NoteTest.kt,3/4/34837f528aeaf8468c88ae48bf17f914cf7faef1
 v
 Fapp/src/test/java/info/sanaebadi/tddandroidunittest/model/util/test.kt,1/0/1008b36983bf6a87d1049c249e08f860f5ccffaf
+‰
+Yapp/src/main/java/info/sanaebadi/tddandroidunittest/viewModel/ViewModelProviderFactory.kt,1/3/13516719bbf95d88924c2c70aad9c6cae6d2af66
+v
+Fapp/src/main/java/info/sanaebadi/tddandroidunittest/di/ViewModelKey.kt,f/0/f07e56a56f3b36123deb04714b15a17df243c23f
+€
+Papp/src/main/java/info/sanaebadi/tddandroidunittest/di/ViewModelFactoryModule.kt,8/3/834f77085906eb047a1f2bb16cda7ed05c454294
+
+Oapp/src/main/java/info/sanaebadi/tddandroidunittest/di/ActivityBuilderModule.kt,a/c/ac62ba0cdf1a97d2bdbbb7bb50ece93e6b229a24
+v
+Fapp/src/main/java/info/sanaebadi/tddandroidunittest/BaseApplication.kt,b/a/ba1ff253540ed46d0c31be092250131568636208
+w
+Gapp/src/main/java/info/sanaebadi/tddandroidunittest/NoteListActivity.kt,6/6/66ddd44bccbce0a795e44b34cf535ddef407d141
+Y
+)app/src/main/res/layout/activity_note.xml,5/5/557e15a98f39b087f4fa5cec4326240d4bef2474
+v
+Fapp/src/main/java/info/sanaebadi/tddandroidunittest/di/AppComponent.kt,2/9/2905074157f96c5b0b6d94374907038d04dae101
+z
+Japp/src/main/java/info/sanaebadi/tddandroidunittest/persistence/NoteDao.kt,c/8/c87557728f01e6372ee6803a5eca8c6f273e34f2
+
+Oapp/src/main/java/info/sanaebadi/tddandroidunittest/persistence/NoteDatabase.kt,4/c/4c30ad2a25aeac7f7016c5385233678883f4b073
+s
+Capp/src/main/java/info/sanaebadi/tddandroidunittest/di/AppModule.kt,9/9/99536b38b35c2fd62d3b0064b793811aee77cc75
+~
+Napp/src/androidTest/java/info/sanaebadi/tddandroidunittest/NoteDatabaseTest.kt,6/c/6ca61c5f963f0c64b8a3a870ff43ea41f06cab7f

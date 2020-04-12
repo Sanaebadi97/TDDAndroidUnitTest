@@ -13,6 +13,41 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Downloads/Telegram Desktop/EBOOK/Source Code/Source Code/Android E Book/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Telegram Desktop/EBOOK/Source Code/Source Code/Android E Book/app/src/main/java/com/example/admin/androidebook/Activity/AboutUs.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Telegram Desktop/EBOOK/Source Code/Source Code/Android E Book/app/src/main/java/com/example/admin/androidebook/Activity/Login.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Telegram Desktop/EBOOK/Source Code/Source Code/Android E Book/app/src/main/java/com/example/admin/androidebook/Activity/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Telegram Desktop/EBOOK/Source Code/Source Code/Android E Book/app/src/main/java/com/example/admin/androidebook/Activity/Profile.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Telegram Desktop/EBOOK/Source Code/Source Code/Android E Book/app/src/main/java/com/example/admin/androidebook/Activity/SCDetail.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Telegram Desktop/EBOOK/Source Code/Source Code/Android E Book/app/src/main/java/com/example/admin/androidebook/Util/YouApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/build.gradle">
           <value>
             <set />
@@ -79,6 +114,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/androidTest/java/info/sanaebadi/tddandroidunittest/NoteDatabaseTest.kt">
           <value>
             <set />
           </value>
