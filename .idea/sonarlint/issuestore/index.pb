@@ -1,16 +1,12 @@
 
 …
 Uapp/src/androidTest/java/info/sanaebadi/tddandroidunittest/ExampleInstrumentedTest.kt,e/b/ebce05e6e26c197ba8055cc401c51c92bd240c8b
-d
-4app/src/main/res/drawable/ic_launcher_background.xml,4/9/49845c622cb06d895975c7b1e3f943e320bce688
 h
 8app/src/main/res/drawable-v24/ic_launcher_foreground.xml,0/7/078508c831007ccb3938b355f0d30a8368f99a8d
 b
 2app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml,8/e/8e27ba16c655f421171956147d0fde89b7d25d17
 h
 8app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml,6/e/6ec7d34b130497a10dc92abcde9b313d370a89df
-R
-"app/src/main/res/values/colors.xml,9/6/969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
 S
 #app/src/main/res/values/strings.xml,d/2/d2281fbb3027de2722081a53408dd77628bf080e
 R
