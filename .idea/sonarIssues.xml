@@ -13,7 +13,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/buildsystem/dependencies.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/data/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/device/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/domain/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/presentation/build.gradle">
           <value>
             <set />
           </value>
@@ -24,6 +49,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/presentation/src/main/java/com/farazpardazan/poshtibanyar/model/PeriodicItemModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../FarazpardazanPro/poshtibanyar-android/presentation/src/main/java/com/farazpardazan/poshtibanyar/mvvm/ui/components/PoshtibanInput.kt">
           <value>
             <set />
           </value>
@@ -129,6 +159,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/test/java/info/sanaebadi/tddandroidunittest/model/models/NoteTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/info/sanaebadi/tddandroidunittest/model/util/DateUtilTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/info/sanaebadi/tddandroidunittest/model/util/test.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/info/sanaebadi/tddandroidunittest/model/util/test.kt">
           <value>
             <set />
           </value>
