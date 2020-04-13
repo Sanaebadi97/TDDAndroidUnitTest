@@ -123,6 +123,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/androidTest/java/info/sanaebadi/tddandroidunittest/NoteDaoTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/androidTest/java/info/sanaebadi/tddandroidunittest/NoteDatabaseTest.kt">
           <value>
             <set />
