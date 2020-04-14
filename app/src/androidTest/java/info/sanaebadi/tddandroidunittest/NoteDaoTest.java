@@ -39,22 +39,22 @@ public class NoteDaoTest extends NoteDatabaseTest {
 
         // read
         LiveDataTestUtil<List<Note>> liveDataTestUtil = new LiveDataTestUtil<>();
-        List<Note> insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes());
+        List<Note> insertedNotes = liveDataTestUtil.getValue(getNoteDao().notes);
 
         assertNotNull(insertedNotes);
 
-        assertEquals(note.getContent(), insertedNotes.get(0).getContent());
-        assertEquals(note.getTimestamp(), insertedNotes.get(0).getTimestamp());
-        assertEquals(note.getTitle(), insertedNotes.get(0).getTitle());
+        assertEquals(note.content, insertedNotes.get(0).content);
+        assertEquals(note.timestamp, insertedNotes.get(0).timestamp);
+        assertEquals(note.title, insertedNotes.get(0).title);
 
-        note.setId(insertedNotes.get(0).getId());
+        note.id = insertedNotes.get(0).id;
         assertEquals(note, insertedNotes.get(0));
 
         // delete
         getNoteDao().deleteNote(note).blockingGet();
 
         // confirm the database is empty
-        insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes());
+        insertedNotes = liveDataTestUtil.getValue(getNoteDao().notes);
         assertEquals(0, insertedNotes.size());
     }
 
@@ -72,38 +72,38 @@ public class NoteDaoTest extends NoteDatabaseTest {
 
         // read
         LiveDataTestUtil<List<Note>> liveDataTestUtil = new LiveDataTestUtil<>();
-        List<Note> insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes());
+        List<Note> insertedNotes = liveDataTestUtil.getValue(getNoteDao().notes);
 
         assertNotNull(insertedNotes);
 
-        assertEquals(note.getContent(), insertedNotes.get(0).getContent());
-        assertEquals(note.getTimestamp(), insertedNotes.get(0).getTimestamp());
-        assertEquals(note.getTitle(), insertedNotes.get(0).getTitle());
+        assertEquals(note.content, insertedNotes.get(0).content);
+        assertEquals(note.timestamp, insertedNotes.get(0).timestamp);
+        assertEquals(note.title, insertedNotes.get(0).title);
 
-        note.setId(insertedNotes.get(0).getId());
+        note.id = insertedNotes.get(0).id;
         assertEquals(note, insertedNotes.get(0));
 
         // update
-        note.setTitle(TEST_TITLE);
-        note.setContent(TEST_CONTENT);
-        note.setTimestamp(TEST_TIMESTAMP);
+        note.title = TEST_TITLE;
+        note.content = TEST_CONTENT;
+        note.timestamp = TEST_TIMESTAMP;
         getNoteDao().updateNote(note).blockingGet();
 
         // read
-        insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes());
+        insertedNotes = liveDataTestUtil.getValue(getNoteDao().notes);
 
-        assertEquals(TEST_TITLE, insertedNotes.get(0).getTitle());
-        assertEquals(TEST_CONTENT, insertedNotes.get(0).getContent());
-        assertEquals(TEST_TIMESTAMP, insertedNotes.get(0).getTimestamp());
+        assertEquals(TEST_TITLE, insertedNotes.get(0).title);
+        assertEquals(TEST_CONTENT, insertedNotes.get(0).content);
+        assertEquals(TEST_TIMESTAMP, insertedNotes.get(0).timestamp);
 
-        note.setId(insertedNotes.get(0).getId());
+        note.id = insertedNotes.get(0).id;
         assertEquals(note, insertedNotes.get(0));
 
         // delete
         getNoteDao().deleteNote(note).blockingGet();
 
         // confirm the database is empty
-        insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes());
+        insertedNotes = liveDataTestUtil.getValue(getNoteDao().notes);
         assertEquals(0, insertedNotes.size());
     }
 
@@ -116,7 +116,7 @@ public class NoteDaoTest extends NoteDatabaseTest {
     public void insert_nullTitle_throwSQLiteConstraintException() throws Exception{
 
         final Note note = new Note(TestUtil.TEST_NOTE_1);
-        note.setTitle(null);
+        note.title = null;
 
         // insert
         getNoteDao().insertNote(note).blockingGet();
@@ -137,12 +137,12 @@ public class NoteDaoTest extends NoteDatabaseTest {
 
         // read
         LiveDataTestUtil<List<Note>> liveDataTestUtil = new LiveDataTestUtil<>();
-        List<Note> insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes());
+        List<Note> insertedNotes = liveDataTestUtil.getValue(getNoteDao().notes);
         assertNotNull(insertedNotes);
 
         // update
         note = new Note(insertedNotes.get(0));
-        note.setTitle(null);
+        note.title = null;
         getNoteDao().updateNote(note).blockingGet();
 
     }

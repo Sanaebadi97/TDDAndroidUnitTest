@@ -1,11 +1,5 @@
-package com.codingwithmitch.unittesting2.ui.note;
+package info.sanaebadi.tddandroidunittest.ui.note;
 
-import com.codingwithmitch.unittesting2.models.Note;
-import com.codingwithmitch.unittesting2.repository.NoteRepository;
-import com.codingwithmitch.unittesting2.ui.Resource;
-import com.codingwithmitch.unittesting2.util.InstantExecutorExtension;
-import com.codingwithmitch.unittesting2.util.LiveDataTestUtil;
-import com.codingwithmitch.unittesting2.util.TestUtil;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,12 +10,18 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
+import info.sanaebadi.tddandroidunittest.models.Note;
+import info.sanaebadi.tddandroidunittest.repository.NoteRepository;
+import info.sanaebadi.tddandroidunittest.ui.Resource;
+import info.sanaebadi.tddandroidunittest.util.InstantExecutorExtension;
+import info.sanaebadi.tddandroidunittest.util.LiveDataTestUtil;
+import info.sanaebadi.tddandroidunittest.util.TestUtil;
 import io.reactivex.Flowable;
 import io.reactivex.internal.operators.single.SingleToFlowable;
 
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.INSERT_SUCCESS;
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.UPDATE_SUCCESS;
-import static com.codingwithmitch.unittesting2.ui.note.NoteViewModel.NO_CONTENT_ERROR;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.INSERT_SUCCESS;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.UPDATE_SUCCESS;
+import static info.sanaebadi.tddandroidunittest.ui.note.NoteViewModel.NO_CONTENT_ERROR;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -123,7 +123,7 @@ public class NoteViewModelTest {
 
         // Arrange
         final Note note = new Note(TestUtil.TEST_NOTE_1);
-        note.setTitle(null);
+        note.title = null;
 
         // Assert
         assertThrows(Exception.class, new Executable() {
@@ -180,7 +180,7 @@ public class NoteViewModelTest {
     void saveNote_shouldAllowSave_returnFalse() throws Exception {
         // Arrange
         Note note = new Note(TestUtil.TEST_NOTE_1);
-        note.setContent(null);
+        note.content = null;
 
         // Act
         noteViewModel.setNote(note);

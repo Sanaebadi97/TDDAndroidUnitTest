@@ -1,13 +1,7 @@
-package com.codingwithmitch.unittesting2.ui.noteslist;
+package info.sanaebadi.tddandroidunittest.ui.noteslist;
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.codingwithmitch.unittesting2.models.Note;
-import com.codingwithmitch.unittesting2.repository.NoteRepository;
-import com.codingwithmitch.unittesting2.ui.Resource;
-import com.codingwithmitch.unittesting2.util.InstantExecutorExtension;
-import com.codingwithmitch.unittesting2.util.LiveDataTestUtil;
-import com.codingwithmitch.unittesting2.util.TestUtil;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,8 +14,15 @@ import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.DELETE_FAILURE;
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.DELETE_SUCCESS;
+import info.sanaebadi.tddandroidunittest.models.Note;
+import info.sanaebadi.tddandroidunittest.repository.NoteRepository;
+import info.sanaebadi.tddandroidunittest.ui.Resource;
+import info.sanaebadi.tddandroidunittest.util.InstantExecutorExtension;
+import info.sanaebadi.tddandroidunittest.util.LiveDataTestUtil;
+import info.sanaebadi.tddandroidunittest.util.TestUtil;
+
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.DELETE_FAILURE;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.DELETE_SUCCESS;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 

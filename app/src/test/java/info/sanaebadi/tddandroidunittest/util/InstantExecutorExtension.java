@@ -1,4 +1,4 @@
-package com.codingwithmitch.unittesting2.util;
+package info.sanaebadi.tddandroidunittest.util;
 
 import androidx.annotation.NonNull;
 import androidx.arch.core.executor.ArchTaskExecutor;

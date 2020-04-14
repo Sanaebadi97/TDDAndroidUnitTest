@@ -1,14 +1,8 @@
-package com.codingwithmitch.unittesting2.repository;
+package info.sanaebadi.tddandroidunittest.repository;
 
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.codingwithmitch.unittesting2.models.Note;
-import com.codingwithmitch.unittesting2.persistence.NoteDao;
-import com.codingwithmitch.unittesting2.ui.Resource;
-import com.codingwithmitch.unittesting2.util.InstantExecutorExtension;
-import com.codingwithmitch.unittesting2.util.LiveDataTestUtil;
-import com.codingwithmitch.unittesting2.util.TestUtil;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,16 +14,23 @@ import org.junit.jupiter.api.function.Executable;
 import java.util.ArrayList;
 import java.util.List;
 
+import info.sanaebadi.tddandroidunittest.models.Note;
+import info.sanaebadi.tddandroidunittest.persistence.NoteDao;
+import info.sanaebadi.tddandroidunittest.repository.NoteRepository;
+import info.sanaebadi.tddandroidunittest.ui.Resource;
+import info.sanaebadi.tddandroidunittest.util.InstantExecutorExtension;
+import info.sanaebadi.tddandroidunittest.util.LiveDataTestUtil;
+import info.sanaebadi.tddandroidunittest.util.TestUtil;
 import io.reactivex.Single;
 
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.DELETE_FAILURE;
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.DELETE_SUCCESS;
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.INSERT_FAILURE;
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.INSERT_SUCCESS;
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.INVALID_NOTE_ID;
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.NOTE_TITLE_NULL;
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.UPDATE_FAILURE;
-import static com.codingwithmitch.unittesting2.repository.NoteRepository.UPDATE_SUCCESS;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.DELETE_FAILURE;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.DELETE_SUCCESS;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.INSERT_FAILURE;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.INSERT_SUCCESS;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.INVALID_NOTE_ID;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.NOTE_TITLE_NULL;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.UPDATE_FAILURE;
+import static info.sanaebadi.tddandroidunittest.repository.NoteRepository.UPDATE_SUCCESS;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -118,7 +119,7 @@ public class NoteRepositoryTest {
             @Override
             public void execute() throws Throwable {
                 final Note note  = new Note(TestUtil.TEST_NOTE_1);
-                note.setTitle(null);
+                note.title = null;
                 noteRepository.insertNote(note);
             }
         });
@@ -186,7 +187,7 @@ public class NoteRepositoryTest {
             @Override
             public void execute() throws Throwable {
                 final Note note  = new Note(TestUtil.TEST_NOTE_1);
-                note.setTitle(null);
+                note.title = null;
                 noteRepository.updateNote(note);
             }
         });
@@ -206,7 +207,7 @@ public class NoteRepositoryTest {
             @Override
             public void execute() throws Throwable {
                 final Note note = new Note(TestUtil.TEST_NOTE_1);
-                note.setId(-1);
+                note.id = -1;
                 noteRepository.deleteNote(note);
             }
         });
@@ -269,7 +270,7 @@ public class NoteRepositoryTest {
         LiveDataTestUtil<List<Note>> liveDataTestUtil = new LiveDataTestUtil<>();
         MutableLiveData<List<Note>> returnedData = new MutableLiveData<>();
         returnedData.setValue(notes);
-        when(noteDao.getNotes()).thenReturn(returnedData);
+        when(noteDao.notes).thenReturn(returnedData);
 
         // Act
         List<Note> observedData = liveDataTestUtil.getValue(noteRepository.getNotes());
@@ -290,7 +291,7 @@ public class NoteRepositoryTest {
         LiveDataTestUtil<List<Note>> liveDataTestUtil = new LiveDataTestUtil<>();
         MutableLiveData<List<Note>> returnedData = new MutableLiveData<>();
         returnedData.setValue(notes);
-        when(noteDao.getNotes()).thenReturn(returnedData);
+        when(noteDao.notes).thenReturn(returnedData);
 
         // Act
         List<Note> observedData = liveDataTestUtil.getValue(noteRepository.getNotes());

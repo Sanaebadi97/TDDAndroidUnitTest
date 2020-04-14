@@ -17,7 +17,7 @@ public abstract class NoteDatabaseTest {
 
 
     public NoteDao getNoteDao(){
-        return noteDatabase.getNoteDao();
+        return noteDatabase.noteDao;
     }
 
     @Before

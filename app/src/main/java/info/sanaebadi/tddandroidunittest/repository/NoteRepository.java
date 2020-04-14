@@ -102,7 +102,7 @@ public class NoteRepository {
     }
 
     private void checkTitle(Note note) throws Exception{
-        if(note.getTitle() == null){
+        if(note.title == null){
             throw new Exception(NOTE_TITLE_NULL);
         }
     }
@@ -134,11 +134,11 @@ public class NoteRepository {
     }
 
     public LiveData<List<Note>> getNotes(){
-        return noteDao.getNotes();
+        return noteDao.notes;
     }
 
     private void checkId(Note note) throws Exception{
-        if(note.getId() < 0){
+        if(note.id < 0){
             throw new Exception(INVALID_NOTE_ID);
         }
     }

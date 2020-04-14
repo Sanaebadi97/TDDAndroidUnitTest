@@ -1,6 +1,5 @@
-package com.codingwithmitch.unittesting2.util;
+package info.sanaebadi.tddandroidunittest.util;
 
-import com.codingwithmitch.unittesting2.models.Note;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -12,10 +11,10 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.Random;
 
-import static com.codingwithmitch.unittesting2.util.DateUtil.GET_MONTH_ERROR;
-import static com.codingwithmitch.unittesting2.util.DateUtil.getMonthFromNumber;
-import static com.codingwithmitch.unittesting2.util.DateUtil.monthNumbers;
-import static com.codingwithmitch.unittesting2.util.DateUtil.months;
+import static info.sanaebadi.tddandroidunittest.util.DateUtil.GET_MONTH_ERROR;
+import static info.sanaebadi.tddandroidunittest.util.DateUtil.getMonthFromNumber;
+import static info.sanaebadi.tddandroidunittest.util.DateUtil.monthNumbers;
+import static info.sanaebadi.tddandroidunittest.util.DateUtil.months;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class DateUtilTest {
@@ -35,7 +34,7 @@ public class DateUtilTest {
     @ParameterizedTest
     @ValueSource(ints = {0,1,2,3,4,5,6,7,8,9,10,11})
     public void getMonthFromNumber_returnSuccess(int monthNumber, TestInfo testInfo, TestReporter testReporter){
-        assertEquals(months[monthNumber], DateUtil.getMonthFromNumber(monthNumbers[monthNumber]));
+        assertEquals(months[monthNumber], getMonthFromNumber(monthNumbers[monthNumber]));
         System.out.println(monthNumbers[monthNumber] + " : " + months[monthNumber]);
     }
 

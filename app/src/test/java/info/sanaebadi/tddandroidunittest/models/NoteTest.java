@@ -1,9 +1,9 @@
-package com.codingwithmitch.unittesting2.models;
+package info.sanaebadi.tddandroidunittest.models;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class NoteTest {
 
@@ -18,9 +18,9 @@ public class NoteTest {
 
         // Arrange
         Note note1 = new Note("Note #1", "This is note #1", TIMESTAMP_1);
-        note1.setId(1);
+        note1.id = 1;
         Note note2 = new Note("Note #1", "This is note #1", TIMESTAMP_1);
-        note2.setId(1);
+        note2.id = 1;
 
         // Act
 
@@ -39,9 +39,9 @@ public class NoteTest {
     void isNotesEqual_differentIds_returnFalse() throws Exception {
         // Arrange
         Note note1 = new Note("Note #1", "This is note #1", TIMESTAMP_1);
-        note1.setId(1);
+        note1.id = 1;
         Note note2 = new Note("Note #1", "This is note #1", TIMESTAMP_1);
-        note2.setId(2);
+        note2.id = 2;
 
         // Act
 
@@ -59,9 +59,9 @@ public class NoteTest {
     void isNotesEqual_differentTimestamps_returnTrue() throws Exception {
         // Arrange
         Note note1 = new Note("Note #1", "This is note #1", TIMESTAMP_1);
-        note1.setId(1);
+        note1.id = 1;
         Note note2 = new Note("Note #1", "This is note #1", TIMESTAMP_2);
-        note2.setId(1);
+        note2.id = 1;
 
         // Act
 
@@ -78,9 +78,9 @@ public class NoteTest {
     void isNotesEqual_differentTitle_returnFalse() throws Exception {
         // Arrange
         Note note1 = new Note("Note #1", "This is note #1", TIMESTAMP_1);
-        note1.setId(1);
+        note1.id = 1;
         Note note2 = new Note("Note #2", "This is note #1", TIMESTAMP_2);
-        note2.setId(1);
+        note2.id = 1;
 
         // Act
 
@@ -99,9 +99,9 @@ public class NoteTest {
     void isNotesEqual_differentContent_returnFalse() throws Exception {
         // Arrange
         Note note1 = new Note("Note #1", "This is note #1", TIMESTAMP_1);
-        note1.setId(1);
+        note1.id = 1;
         Note note2 = new Note("Note #1", "This is note #2", TIMESTAMP_2);
-        note2.setId(1);
+        note2.id = 1;
 
         // Act
 
