@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 apply plugin: "de.mannodermaus.android-junit5"
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
@@ -69,16 +70,20 @@ dependencies {
     testImplementation "org.mockito:mockito-core:$mockito_version"
 
     // Dagger
-    def dagger_version = "2.22"
+    def latest_version = "2.22"
 
-    // Dagger2 core
-    implementation "com.google.dagger:dagger:$dagger_version"
-    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
+
 
     // Dagger Android
-    implementation "com.google.dagger:dagger-android:$dagger_version"
-    implementation "com.google.dagger:dagger-android-support:$dagger_version"
-    annotationProcessor "com.google.dagger:dagger-android-processor:$dagger_version"
+    implementation "com.google.dagger:dagger:$latest_version"
+    kapt  "com.google.dagger:dagger-compiler:$latest_version"
+    implementation "com.google.dagger:dagger-android:2.26"
+    kapt  "com.google.dagger:dagger-android-processor:$latest_version"
+    implementation "com.google.dagger:dagger-android-support:2.26"
+    kapt  "com.google.dagger:dagger-android-support:2.26"
+
+
+
 
     def material_version = "1.1.0"
     implementation "com.google.android.material:material:$material_version"

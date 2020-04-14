@@ -9,10 +9,9 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Rule
 import org.junit.Test
-import org.mockito.internal.matchers.Not
 
 
-class NoteDaoTest : NoteDatabaseTest() {
+class NoteDaoTestK : NoteDatabaseTest() {
 
 
     companion object {
@@ -23,6 +22,7 @@ class NoteDaoTest : NoteDatabaseTest() {
 
 
     @Rule
+    @JvmField
     var rule: InstantTaskExecutorRule = InstantTaskExecutorRule()
 
     // Insert , Read , Delete
@@ -34,14 +34,14 @@ class NoteDaoTest : NoteDatabaseTest() {
         val note = Note(TestUtil.TEST_NOTE_1)
 
         //insert
-        getNoteDao().insertNote(note)!!.blockingGet() //wait until inserted
+        noteDao.insertNote(note)!!.blockingGet() //wait until inserted
 
 
         // read
 
         // read
         var liveDataTestUtil = LiveDataTestUtil<List<Note>>()
-        var insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes())!!
+        var insertedNotes = liveDataTestUtil.getValue(noteDao.getNotes())!!
 
         assertNotNull(insertedNotes)
         assertEquals(note.content, insertedNotes[0].content)
@@ -53,10 +53,10 @@ class NoteDaoTest : NoteDatabaseTest() {
 
 
         //delete
-        getNoteDao().deleteNote(note).blockingGet()
+        noteDao.deleteNote(note).blockingGet()
 
         //confirm the database is empty
-        insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes())!!
+        insertedNotes = liveDataTestUtil.getValue(noteDao.getNotes())!!
         assertEquals(0, insertedNotes.size)
     }
 
@@ -70,14 +70,14 @@ class NoteDaoTest : NoteDatabaseTest() {
         val note = Note(TestUtil.TEST_NOTE_1)
 
         //insert
-        getNoteDao().insertNote(note)!!.blockingGet() //wait until inserted
+        noteDao.insertNote(note)!!.blockingGet() //wait until inserted
 
 
         // read
 
         // read
         var liveDataTestUtil = LiveDataTestUtil<List<Note>>()
-        var insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes())!!
+        var insertedNotes = liveDataTestUtil.getValue(noteDao.getNotes())!!
 
         assertNotNull(insertedNotes)
         assertEquals(note.content, insertedNotes[0].content)
@@ -89,17 +89,17 @@ class NoteDaoTest : NoteDatabaseTest() {
 
 
         //delete
-        getNoteDao().deleteNote(note).blockingGet()
+        noteDao.deleteNote(note).blockingGet()
 
         //update
         note.title = TITLE_TEST
         note.content = CONTENT_TEST
         note.timestamp = TIMESTAMP_TEST
-        getNoteDao().updateNote(note).blockingGet()
+        noteDao.updateNote(note).blockingGet()
 
 
         //read
-        insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes())
+        insertedNotes = liveDataTestUtil.getValue(noteDao.getNotes())!!
 
         assertEquals(TITLE_TEST, insertedNotes[0].title)
         assertEquals(CONTENT_TEST, insertedNotes[0].content)
@@ -111,7 +111,7 @@ class NoteDaoTest : NoteDatabaseTest() {
 
 
         //confirm the database is empty
-        insertedNotes = liveDataTestUtil.getValue(getNoteDao().getNotes())!!
+        insertedNotes = liveDataTestUtil.getValue(noteDao.getNotes())!!
         assertEquals(0, insertedNotes.size)
     }
 
@@ -126,7 +126,7 @@ class NoteDaoTest : NoteDatabaseTest() {
         note.title = null
 
         //insert
-        getNoteDao().insertNote(note)!!.blockingGet()
+        noteDao.insertNote(note)!!.blockingGet()
 
     }
 
@@ -138,11 +138,11 @@ class NoteDaoTest : NoteDatabaseTest() {
     internal fun update_nullTitle_throwSQLiteConstraintException() {
 
         var note = Note(TestUtil.TEST_NOTE_1)
-        getNoteDao().insertNote(note)!!.blockingGet()
+        noteDao.insertNote(note)!!.blockingGet()
 
         //read
         var liveDataTestUtil: LiveDataTestUtil<List<Note>> = LiveDataTestUtil()
-        var insertNotes: List<Note> = liveDataTestUtil.getValue(getNoteDao().getNotes())!!
+        var insertNotes: List<Note> = liveDataTestUtil.getValue(noteDao.getNotes())!!
         assertNotNull(insertNotes)
 
 
@@ -150,7 +150,7 @@ class NoteDaoTest : NoteDatabaseTest() {
         //update
         note = Note(insertNotes[0])
         note.title = null
-        getNoteDao().updateNote(note).blockingGet()
+        noteDao.updateNote(note).blockingGet()
 
     }
 }

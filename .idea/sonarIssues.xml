@@ -123,7 +123,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/androidTest/java/info/sanaebadi/tddandroidunittest/NoteDaoTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/androidTest/java/info/sanaebadi/tddandroidunittest/NoteDaoTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/androidTest/java/info/sanaebadi/tddandroidunittest/NoteDaoTestK.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/androidTest/java/info/sanaebadi/tddandroidunittest/NoteDatabaseTest.java">
           <value>
             <set />
           </value>
@@ -134,6 +149,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/BaseApplication.kt">
           <value>
             <set />
           </value>
@@ -279,6 +299,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/test-common/java/info/sanaebadi/tddandroidunittest/util/LiveDataUtil.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test-common/java/info/sanaebadi/tddandroidunittest/util/TestUtil.java">
           <value>
             <set />
           </value>
