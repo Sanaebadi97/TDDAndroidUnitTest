@@ -8,8 +8,8 @@ import javax.inject.Singleton
 @Singleton
 class NoteRepository {
 
-    //inject
     @NonNull
+    //inject
     lateinit var noteDao:NoteDao
 
     @Inject

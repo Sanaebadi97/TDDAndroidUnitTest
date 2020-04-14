@@ -118,6 +118,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/info/sanaebadi/tddandroidunittest/di/AppComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/info/sanaebadi/tddandroidunittest/di/AppModule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/androidTest/java/info/sanaebadi/tddandroidunittest/ExampleInstrumentedTest.kt">
           <value>
             <set />
@@ -154,6 +164,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/BaseApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/NoteListActivity.kt">
           <value>
             <set />
           </value>

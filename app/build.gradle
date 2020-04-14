@@ -69,18 +69,16 @@ dependencies {
     def mockito_version = "2.19.0"
     testImplementation "org.mockito:mockito-core:$mockito_version"
 
-    // Dagger
-    def latest_version = "2.22"
 
+    def dagger_version = "2.26"
+//dagger
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
 
-
-    // Dagger Android
-    implementation "com.google.dagger:dagger:$latest_version"
-    kapt  "com.google.dagger:dagger-compiler:$latest_version"
-    implementation "com.google.dagger:dagger-android:2.26"
-    kapt  "com.google.dagger:dagger-android-processor:$latest_version"
-    implementation "com.google.dagger:dagger-android-support:2.26"
-    kapt  "com.google.dagger:dagger-android-support:2.26"
+//If you're using classes in dagger.android you'll also want to include:
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
 
 
 

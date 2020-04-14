@@ -5,9 +5,11 @@ import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
+import dagger.android.ContributesAndroidInjector
 import info.sanaebadi.tddandroidunittest.BaseApplication
+import javax.inject.Singleton
 
-
+@Singleton
 @Component(
     modules = [
         AndroidInjectionModule::class,
