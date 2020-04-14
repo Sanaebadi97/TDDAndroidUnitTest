@@ -30,6 +30,6 @@ public abstract class NoteDatabaseTest {
 
     @After
     public void finish(){
-        noteDatabase.close();
+        //noteDatabase.close();
     }
 }

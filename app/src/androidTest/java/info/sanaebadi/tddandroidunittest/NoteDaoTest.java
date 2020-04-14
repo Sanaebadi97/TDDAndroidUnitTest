@@ -3,9 +3,11 @@ package info.sanaebadi.tddandroidunittest;
 import android.database.sqlite.SQLiteConstraintException;
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule;
+import androidx.test.runner.AndroidJUnit4;
 
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import java.util.List;
 
@@ -15,6 +17,8 @@ import info.sanaebadi.tddandroidunittest.util.TestUtil;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+
+@RunWith(AndroidJUnit4.class)
 
 public class NoteDaoTest extends NoteDatabaseTest {
 
@@ -28,8 +32,10 @@ public class NoteDaoTest extends NoteDatabaseTest {
     /*
         Insert, Read, Delete
      */
+
+
     @Test
-    public void insertReadDelete() throws Exception{
+    public void insertReadDelete() throws Exception {
 
         Note note = new Note(TestUtil.TEST_NOTE_1);
 
@@ -62,7 +68,7 @@ public class NoteDaoTest extends NoteDatabaseTest {
         Insert, Read, Update, Read, Delete,
      */
     @Test
-    public void insertReadUpdateReadDelete() throws Exception{
+    public void insertReadUpdateReadDelete() throws Exception {
 
         Note note = new Note(TestUtil.TEST_NOTE_1);
 
@@ -107,12 +113,11 @@ public class NoteDaoTest extends NoteDatabaseTest {
     }
 
 
-
     /*
         Insert note with null title, throw exception
      */
     @Test(expected = SQLiteConstraintException.class)
-    public void insert_nullTitle_throwSQLiteConstraintException() throws Exception{
+    public void insert_nullTitle_throwSQLiteConstraintException() throws Exception {
 
         final Note note = new Note(TestUtil.TEST_NOTE_1);
         note.setTitle(null);
@@ -127,7 +132,7 @@ public class NoteDaoTest extends NoteDatabaseTest {
      */
 
     @Test(expected = SQLiteConstraintException.class)
-    public void updateNote_nullTitle_throwSQLiteConstraintException() throws Exception{
+    public void updateNote_nullTitle_throwSQLiteConstraintException() throws Exception {
 
         Note note = new Note(TestUtil.TEST_NOTE_1);
 
