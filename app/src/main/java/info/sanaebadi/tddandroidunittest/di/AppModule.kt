@@ -6,6 +6,7 @@ import dagger.Module
 import dagger.Provides
 import info.sanaebadi.tddandroidunittest.persistence.NoteDao
 import info.sanaebadi.tddandroidunittest.persistence.NoteDatabase
+import info.sanaebadi.tddandroidunittest.repository.NoteRepository
 import javax.inject.Singleton
 
 @Module
@@ -26,6 +27,16 @@ class AppModule {
     @Provides
     fun provideNoteDao(noteDatabase: NoteDatabase): NoteDao {
         return noteDatabase.gtNoteDao()
+    }
+
+
+    companion object {
+        @Singleton
+        @Provides
+
+        fun provideNoteRepository(noteDao: NoteDao): NoteRepository {
+            return NoteRepository(noteDao)
+        }
     }
 
 }
