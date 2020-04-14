@@ -1,0 +1,50 @@
+
+D
+java:S1199†"-Extract this nested code block into a method.(ÌËÓ­
+—
+java:S1186Á"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¤ñÓ/
+8	java:S131Ì""Add a default case to this switch.(ºÖ
+D
+java:S1199"-Extract this nested code block into a method.(ç—Ğ
+˜
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«û³±
+>
+java:S1148c"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+8	java:S131…""Add a default case to this switch.(¹‡œÎ
+„
+java:S3252É"hUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_SHORT".(º¼¤ ùÿÿÿÿ
+?
+java:S1148¶"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+G
+java:S16592"1Declare "backArrowContrainer" on a separate line.(Œºô®
+I
+java:S1199Ñ"-Extract this nested code block into a method.(Îêñìşÿÿÿÿ
+I
+java:S1199‹"-Extract this nested code block into a method.(‰ôîıùÿÿÿÿ
+P
+java:S1874I":Remove this use of "ViewModelProviders"; it is deprecated.(³¡Š¢
+˜
+java:S1186²"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Å—ïô
+=
+java:S16593"'Declare "backArrow" on a separate line.(ıºêô
+I
+java:S1199ª"-Extract this nested code block into a method.(Šæğ¾ùÿÿÿÿ
+I
+java:S1199Õ"-Extract this nested code block into a method.(º•œêüÿÿÿÿ
+?
+java:S1148Ó"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+b
+java:S1301…"KReplace this "switch" statement by "if" statements to increase readability.(¹‡œÎ
+D
+java:S1199Í"-Extract this nested code block into a method.(³¶‚ñ
+?
+java:S1148æ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+˜
+java:S1186˜"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(±¾ê
+@
+java:S1874I"*Remove this use of "of"; it is deprecated.(³¡Š¢
+D
+java:S1199¤"-Extract this nested code block into a method.(Ö÷„”
+=	java:S131œ""Add a default case to this switch.(¿Ç—Ñøÿÿÿÿ
+?
+java:S1148±"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

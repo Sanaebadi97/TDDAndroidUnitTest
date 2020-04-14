@@ -1,0 +1,18 @@
+
+C
+java:S1199o"-Extract this nested code block into a method.(€Ý¡¤
+Z
+java:S3398w"?Move this method into the anonymous class declared at line 127.(±óþËþÿÿÿÿ
+?
+java:S1148–"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+<	java:S131n""Add a default case to this switch.(×“¾ñùÿÿÿÿ
+m
+java:S1450,"RRemove the "fab" field and declare it as a local variable in the relevant methods.(ÈÃ‡Æøÿÿÿÿ
+@
+java:S1874B"*Remove this use of "of"; it is deprecated.(¹ëâ¹
+P
+java:S1874B":Remove this use of "ViewModelProviders"; it is deprecated.(¹ëâ¹
+f
+java:S1301n"KReplace this "switch" statement by "if" statements to increase readability.(×“¾ñùÿÿÿÿ
+ƒ
+java:S3252z"hUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_SHORT".(º¼¤ ùÿÿÿÿ

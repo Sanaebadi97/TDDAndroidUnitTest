@@ -1,0 +1,9 @@
+
+m
+java:S1206'"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã8¢ÎşÁ—.
+~
+java:S2637!"aParameter 3 to this constructor is marked "androidx.annotation.NonNull" but null could be passed.(à²È½8¢ÎşÁ—.
+L
+java:S10663"/Merge this if statement with the enclosing one.(ìà¯8¢ÎşÁ—.
+^
+java:S2259("AA "NullPointerException" could be thrown; "obj" is nullable here.(„’ñ¹8¢ÎşÁ—.

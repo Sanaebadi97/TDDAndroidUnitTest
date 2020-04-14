@@ -163,6 +163,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/BaseApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/BaseApplication.kt">
           <value>
             <set />
@@ -178,7 +183,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/di/ActivityBuildersModule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/di/AppComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/di/AppComponent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/di/AppModule.java">
           <value>
             <set />
           </value>
@@ -193,7 +213,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/di/ViewModelFactoryModule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/di/ViewModelFactoryModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/di/ViewModelKey.java">
           <value>
             <set />
           </value>
@@ -238,7 +268,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/models/Note.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/persistence/NoteDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/persistence/NoteDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/persistence/NoteDatabase.java">
           <value>
             <set />
           </value>
@@ -253,6 +298,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/repository/NoteRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/repository/NoteRepository.kt">
           <value>
             <set />
@@ -263,12 +313,67 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/ui/Resource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/ui/Resource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/ui/note/NoteActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/ui/note/NoteInsertUpdateHelper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/ui/note/NoteViewModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/ui/noteslist/NotesListActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/ui/noteslist/NotesListViewModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/ui/noteslist/NotesRecyclerAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/util/BaseApplication.kt">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/util/DateUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/util/DateUtil.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/util/LinedEditText.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/util/VerticalSpacingItemDecorator.java">
           <value>
             <set />
           </value>
@@ -279,6 +384,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/viewModel/ViewModelProviderFactory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/info/sanaebadi/tddandroidunittest/viewmodels/ViewModelProviderFactory.java">
           <value>
             <set />
           </value>
@@ -309,6 +419,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test-common/java/info/sanaebadi/tddandroidunittest/util/LiveDataTestUtil.java">
           <value>
             <set />
           </value>
@@ -369,6 +484,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Unit-Testing-2/app/src/main/java/com/codingwithmitch/unittesting2/BaseApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Unit-Testing-2/app/src/main/java/com/codingwithmitch/unittesting2/repository/NoteRepository.kt">
           <value>
             <set />
           </value>

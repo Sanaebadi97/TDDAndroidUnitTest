@@ -1,10 +1,11 @@
 package info.sanaebadi.tddandroidunittest.util;
 
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import info.sanaebadi.tddandroidunittest.model.Note;
+import info.sanaebadi.tddandroidunittest.models.Note;
 
 public class TestUtil {
 

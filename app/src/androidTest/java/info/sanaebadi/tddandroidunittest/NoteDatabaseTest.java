@@ -17,7 +17,7 @@ public abstract class NoteDatabaseTest {
 
 
     public NoteDao getNoteDao(){
-        return noteDatabase.gtNoteDao();
+        return noteDatabase.getNoteDao();
     }
 
     @Before
@@ -30,6 +30,12 @@ public abstract class NoteDatabaseTest {
 
     @After
     public void finish(){
-        //noteDatabase.close();
+        noteDatabase.close();
     }
 }
+
+
+
+
+
+
